@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import socket from '../../socket';
 
 const Main = (props) => {
-  const roomRef = useRef();
-  const userRef = useRef();
+  const {roomRef} = useRef();
+  const {userRef} = useRef();
   const [err, setErr] = useState(false);
   const [errMsg, setErrMsg] = useState('');
 
